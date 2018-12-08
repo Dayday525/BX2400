@@ -101,8 +101,7 @@ static int8_t app_correct_rssi(int8_t rssi)
 static void osapp_gapm_adv_report_ind_handler(ke_msg_id_t const msgid, void const *param,ke_task_id_t const dest_id,
                                               ke_task_id_t const src_id)
 {
-//		printf("GAPM_ADV_REPORT_IND = 0x%x\t",GAPM_ADV_REPORT_IND);
-//		printf("msgid = 0x%x\tdest_id = %d\tsrc_id = %d\n",msgid,dest_id,src_id);
+
     struct adv_report const *report = param;
 		uint8_t count=0;
 		uint8_t index = report->data_len;
